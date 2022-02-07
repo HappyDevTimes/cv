@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: hsl(40, 50%, 60%);
+}
+
+/* IDs */
+#header {
+    font-style: italic;
+    font-weight: lighter;
+    margin:auto;
+    text-align: center;
+    display: grid;
+    border-bottom: 1px solid hsl(40, 100%, 35%);
+    font-size: 2em;
+    line-height: 0%;
+    width: 98%;
+}
+
+#description {
+    display: grid;
+    border-bottom: 1px solid hsl(40, 100%, 35%);
+    width: 98%;
+    grid-template-columns: 25% 75%;
+    margin: auto;
+}
+
+#description img {
+    margin: 10px;
+}
+
+/* Classes */
+.columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    border-bottom: 1px solid hsl(40, 100%, 35%);
+    width: 98%;
+    margin: auto;
+}
+
+.columns li {
+    text-align: left;
+}
+
+.container {
+    background-color: hsl(40, 100%, 85%);
+    width: 60%;
+    margin: auto;
+}
+
+.footer {
+    text-align: center;
+    line-height:20%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+
+    .columns {
+        grid-template-columns: 100%;
+    }
+
+    #description {
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .columns {
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+
+    #description {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    #description img {
+        padding: 10px;
+        margin: auto;
+        width: 50;
+    }
+}
